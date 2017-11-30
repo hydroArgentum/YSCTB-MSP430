@@ -44,10 +44,38 @@
         <div class="col-sm-8 blog-main">
 
           <div class="blog-post">
-            <h2 class="blog-post-title">Blogger Up</h2>
-            <p class="blog-post-meta">November 29, 2017</a></p>
+            <h2 class="blog-post-title">Part 1: Some Initial Measurements</h2>
+            <p class="blog-post-meta">November 30, 2017</a></p>
 
-            <p>The Blogger page is up! Check out the Blogger link if you want to see any old posts!</p>
+            <p>First, let’s do some initial measurements so we know what to expect when designing the project.</p>
+            <p>I’ve decided to do this by measuring what the lighting in my living area can provide. To measure this out, I’ll be using the same device that I’ll be using to actually detect the amount of light in the project, a photoresistor.</p>
+
+            <div class="text-center">
+              <figure class="figure">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Photoresistor_symbol.svg" class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center">A circuit photoresistor symbol (By User:FDominec et al. (File:Electrical_symbols_library.svg) [<a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a>], <a href="https://commons.wikimedia.org/wiki/File%3APhotoresistor_symbol.svg">via Wikimedia Commons</a>)</figcaption>
+              </figure>
+            </div>
+
+            <p>So, I’ve laid out the photoresistor on a breadboard so that I can measure the resistance at the current light level.</p>
+
+            <div class="text-center">
+              <figure class="figure">
+                <img src="./Photoresistor.jpg" class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center">A lone photoresistor</figcaption>
+              </figure>
+            </div>
+
+            <p>Looking at the resulting reading, we can see that the resistor at the ambient lighting is roughly 53.3 k&#937;.</p>
+
+            <div class="text-center">
+              <figure class="figure">
+                <img src="./ResistorValue.jpg" class="figure-img img-fluid">
+                <figcaption class="figure-caption text-center">A REALLY grainy picture. The ISO was probably through the roof.</figcaption>
+              </figure>
+            </div>
+
+            <p>Since we want to lean towards conserving electricity and the fact that the circuit will probably be a little further away from the light, we can assume that our desired threshold resistance should be around 60 k&#937;.</p>
 
           </div><!-- /.blog-post -->
 
